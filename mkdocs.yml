@@ -1,6 +1,6 @@
 site_name: Chaudière Pelletti II — Documentation
 site_description: Documentation technique de la chaudière à granulés Paradigma Pelletti II R 203 et du régulateur SystaComfort, en français.
-site_url: ""
+site_url: https://systa.libussa.net/
 docs_dir: docs
 use_directory_urls: false
 
