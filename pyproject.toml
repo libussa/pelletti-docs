@@ -1,0 +1,12 @@
+[project]
+name = "pelletti-docs"
+version = "0.1.0"
+description = "Documentation chaudière Pelletti II (site MkDocs)"
+requires-python = ">=3.12"
+dependencies = ["mkdocs-material==9.8.1"]
+
+[dependency-groups]
+dev = ["pillow"]
+
+[tool.uv]
+package = false

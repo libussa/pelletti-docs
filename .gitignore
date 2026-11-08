@@ -1,0 +1,5 @@
+.venv/
+site/
+staging/
+.claude/
+__pycache__/

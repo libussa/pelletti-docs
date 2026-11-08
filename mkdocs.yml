@@ -1,0 +1,79 @@
+site_name: Chaudière Pelletti II — Documentation
+site_description: Documentation technique de la chaudière à granulés Paradigma Pelletti II R 203 et du régulateur SystaComfort, en français.
+site_url: ""
+docs_dir: docs
+use_directory_urls: false
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle: {icon: material/brightness-7, name: Mode sombre}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle: {icon: material/brightness-4, name: Mode clair}
+
+plugins:
+  - search:
+      lang: fr
+
+hooks:
+  - hooks/llms.py
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Accueil: index.md
+  - Ma chaudière:
+      - ma-chaudiere/plaque.md
+  - La chaudière Pelletti II:
+      - chaudiere/description.md
+      - chaudiere/caracteristiques.md
+  - Utilisation:
+      - utilisation/instructions-simplifiees.md
+      - utilisation/fonctionnement.md
+      - utilisation/module-commande.md
+      - parametres/chaudiere.md
+  - Entretien:
+      - entretien/entretien.md
+      - entretien/combustion.md
+  - Dépannage:
+      - depannage/codes-panne.md
+      - depannage/sondes.md
+      - depannage/cablage-pfa.md
+  - Régulation SystaComfort:
+      - regulation/fonctions.md
+      - regulation/apercu-commandes.md
+      - regulation/mise-en-service.md
+      - regulation/fonctionnement-pannes.md
+      - regulation/valeurs-defaut.md
+      - regulation/montage-raccordement.md
+  - Installation:
+      - installation/mise-en-place.md
+      - installation/electricite.md
+      - installation/fumees.md
+      - installation/hydraulique.md
+      - installation/mise-en-service.md
+  - Référence:
+      - reference/securite-normes.md
+      - reference/sources.md
